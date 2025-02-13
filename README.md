@@ -1,24 +1,3 @@
-# PONI
-
-This repository contains a Pytorch implementation of our CVPR 2022 paper:
-
-[PONI: Potential Functions for ObjectGoal Navigation with Interaction-free Learning](https://arxiv.org/pdf/2201.10029.pdf)<br/>
-Santhosh Kumar Ramakrishnan, Devendra Singh Chaplot, Ziad Al-Halah, Jitendra Malik, Kristen Grauman<br/>
-Meta AI, UT Austin, UC Berkeley 
-
-Project website: [https://vision.cs.utexas.edu/projects/poni/](https://vision.cs.utexas.edu/projects/poni/)
-
-![demo](./docs/poni_cvpr_2022.gif)
-
-## Abstract
-State-of-the-art approaches to ObjectGoal navigation rely on reinforcement learning and typically require significant computational resources and time for learning. We propose Potential functions for ObjectGoal Navigation with Interaction-free learning (PONI), a modular approach that disentangles the skills of 'where to look?' for an object and 'how to navigate to (x, y)?'. Our key insight is that 'where to look?' can be treated purely as a perception problem, and learned without environment interactions. To address this, we propose a network that predicts two complementary potential functions conditioned on a semantic map and uses them to decide where to look for an unseen object. We train the potential function network using supervised learning on a passive dataset of top-down semantic maps, and integrate it into a modular framework to perform ObjectGoal navigation. Experiments on Gibson and Matterport3D demonstrate that our method achieves the state-of-the-art for ObjectGoal navigation while incurring up to 1,600x less computational cost for training.
-
-<p align="center">
-  <img src="docs/poni_intro.jpg">
-</p>
-
-
-
 
 ## Installation
 
@@ -170,18 +149,9 @@ We use the ObjectNav evaluation setup from [Habitat-Lab](https://github.com/face
 
 ## Acknowledgements
 
-In our work, we used parts of [Semantic-MapNet](https://github.com/vincentcartillier/Semantic-MapNet), [Habitat-Lab](https://github.com/facebookresearch/habitat-lab), [Object-Goal-Navigation](https://github.com/devendrachaplot/Object-Goal-Navigation), and [astar_pycpp](https://github.com/srama2512/astar_pycpp) repos and extended them.
+In our work, we used parts of [Semantic-MapNet](https://github.com/vincentcartillier/Semantic-MapNet), [Habitat-Lab](https://github.com/facebookresearch/habitat-lab), [Object-Goal-Navigation](https://github.com/devendrachaplot/Object-Goal-Navigation), [astar_pycpp](https://github.com/srama2512/astar_pycpp) and [PONI](https://github.com/srama2512/PONI) repos and extended them.
 
-## Citation
-If you find this codebase useful, please cite us:
-```
-@inproceedings{ramakrishnan2022poni,
-    author       = {Ramakrishnan, Santhosh K. and Chaplot, Devendra Singh and Al-Halah, Ziad and Malik, Jitendra and Grauman, Kristen},
-    booktitle    = {Computer Vision and Pattern Recognition (CVPR), 2022 IEEE Conference on},
-    title        = {PONI: Potential Functions for ObjectGoal Navigation with Interaction-free Learning},
-    year         = {2022},
-    organization = {IEEE},
-}
+
 ```
 
 ## License
