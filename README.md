@@ -152,7 +152,6 @@ We use the ObjectNav evaluation setup from [Habitat-Lab](https://github.com/face
 In our work, we used parts of [Semantic-MapNet](https://github.com/vincentcartillier/Semantic-MapNet), [Habitat-Lab](https://github.com/facebookresearch/habitat-lab), [Object-Goal-Navigation](https://github.com/devendrachaplot/Object-Goal-Navigation), [astar_pycpp](https://github.com/srama2512/astar_pycpp) and [PONI](https://github.com/srama2512/PONI) repos and extended them.
 
 
-```
-
 ## License
 This project is released under the MIT license, as found in the [LICENSE](LICENSE) file.
+
